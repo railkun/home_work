@@ -24,9 +24,7 @@ class Drink
     @name
   end
 
-
-
- end
+end
 
 coffee = Drink.new
 coffee.name = 'Latte'
