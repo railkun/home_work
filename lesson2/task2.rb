@@ -17,6 +17,19 @@ module CustomEnumeator
     end
     p a
   end
+
+  def custom_reduce
+    sum = nil
+    @teams.each do |number|
+      if sum.nil?
+        sum = @teams.first
+      else
+      sum = yield sum, number
+      end
+    end
+    sum
+  end
+
 end
 
 class SuperHeroTeam
