@@ -1,2 +1,5 @@
 Documentation:
   Enabled: false
+AllCops:
+  Exclude:
+    - lesson1/task1.rb

@@ -7,8 +7,8 @@ if task_name == 'a'
   p 'Write your task'
   task_a = gets.chomp
   list.push(task_a)
-else task_name == ''
-     p 'syntax error'
+elsif task_name == ''
+  p 'syntax error'
 end
 
 loop do
@@ -28,8 +28,8 @@ loop do
     list.delete(task_d)
   elsif task_name1 == 'e'
     p 'Bye'
-  else task_name1 == ''
-       p 'syntax error'
+  elsif task_name1 == ''
+    p 'syntax error'
   end
   break if task_name1 == 'e'
 end
