@@ -1,5 +1,4 @@
 class SuperHero
-
   include Comparable
 
   attr_reader :name, :strength, :agility, :intelligence, :avarage
@@ -12,11 +11,10 @@ class SuperHero
   end
 
   def avarage
-    @avarage = (@strength + @agility + @intelligence)/3
+    @avarage = (@strength + @agility + @intelligence) / 3
   end
 
   def <=>(other)
     avarage <=> other.avarage
   end
-
 end

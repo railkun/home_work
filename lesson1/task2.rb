@@ -9,12 +9,9 @@ class Human
     @name
   end
 
-  def invite(name)
-    "Ira"
+  def invite(_name)
+    'Ira'
   end
-
-
-
 end
 
 class Drink
@@ -23,7 +20,6 @@ class Drink
   def coffee
     @name
   end
-
 end
 
 coffee = Drink.new

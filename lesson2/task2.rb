@@ -1,5 +1,4 @@
 module CustomEnumeator
-
   def custom_maxmin
     a = @teams.first
     b = @teams.first
@@ -21,19 +20,17 @@ module CustomEnumeator
   def custom_reduce
     sum = nil
     @teams.each do |number|
-      if sum.nil?
-        sum = @teams.first
-      else
-      sum = yield sum, number
-      end
+      sum = if sum.nil?
+              @teams.first
+            else
+              yield sum, number
+            end
     end
     sum
   end
-
 end
 
 class SuperHeroTeam
-
   include CustomEnumeator
 
   attr_reader :teams
@@ -41,5 +38,4 @@ class SuperHeroTeam
   def initialize(members)
     @teams = members
   end
-
 end

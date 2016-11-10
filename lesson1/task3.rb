@@ -1,4 +1,4 @@
-list = Array.new
+list = []
 
 p 'Hello it is you to do list '
 p 'Press a to add task'
@@ -8,7 +8,7 @@ if task_name == 'a'
   task_a = gets.chomp
   list.push(task_a)
 else task_name == ''
-  p 'syntax error'
+     p 'syntax error'
 end
 
 loop do
@@ -29,8 +29,7 @@ loop do
   elsif task_name1 == 'e'
     p 'Bye'
   else task_name1 == ''
-    p 'syntax error'
+       p 'syntax error'
   end
-break if task_name1 == 'e'
-
+  break if task_name1 == 'e'
 end
