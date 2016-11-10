@@ -3,3 +3,4 @@ Documentation:
 AllCops:
   Exclude:
     - lesson1/task1.rb
+    - lesson3/to_shuffle/to_shuffle.gemspec
