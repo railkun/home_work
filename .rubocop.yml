@@ -3,4 +3,23 @@ Documentation:
 AllCops:
   Exclude:
     - lesson1/task1.rb
-    - lesson3/to_shuffle/to_shuffle.gemspec
+    - lesson4/rspec-showcase/Gemfile
+    - lesson4/rspec-showcase/app/controllers/posts_controller.rb
+    - lesson4/rspec-showcase/db/seeds.rb
+    - lesson4/rspec-showcase/db/schema.rb
+    - lesson4/rspec-showcase/bin/spring
+    - lesson4/rspec-showcase/config/initializers/new_framework_defaults.rb
+    - lesson4/rspec-showcase/config/initializers/backtrace_silencers.rb
+    - lesson4/rspec-showcase/config/initializers/wrap_parameters.rb
+    - lesson4/rspec-showcase/config/initializers/assets.rb
+    - lesson4/rspec-showcase/config/initializers/session_store.rb
+    - lesson4/rspec-showcase/config/puma.rb
+    - lesson4/rspec-showcase/config/environments/production.rb
+    - lesson4/rspec-showcase/config/environments/test.rb
+    - lesson4/rspec-showcase/config/environments/development.rb
+    - lesson4/rspec-showcase/config/application.rb
+    - lesson4/rspec-showcase/Rakefile
+    - lesson4/rspec-showcase/spec/spec_helper.rb
+    - lesson4/rspec-showcase/spec/controllers/posts_controller_spec.rb
+    - lesson4/rspec-showcase/spec/rails_helper.rb
+    - lesson4/rspec-showcase/spec/models/post_spec.rb
