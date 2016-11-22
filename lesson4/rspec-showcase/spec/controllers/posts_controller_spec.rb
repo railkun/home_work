@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
   describe 'GET #publish' do
-    it 'test action publish' do
+    it 'changes published to true' do
       post = Post.create!(id: 1, body: 'blabla', title: 'test', user_id: 1, published: false)
       get :publish, id: post.id
       post.publish
@@ -11,10 +11,8 @@ RSpec.describe PostsController, type: :controller do
   end
 
   describe 'GET #unpublish' do
-    it 'test action unpublish' do
-      post = Post.create!(id: 1, body: 'blabla', title: 'test', user_id: 1, published: false)
-      get :publish, id: post.id
-      post.publish
+    it 'changes published to false' do
+      post = Post.create!(id: 1, body: 'blabla', title: 'test', user_id: 1, published: true)
       get :unpublish, id: post.id
       post.unpublish
       expect(post.published).to be false
