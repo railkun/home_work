@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: pguser
+  password: 1234
+  database: rspec-showcase
+  schema_search_path: public
+  encoding: utf8
+  template: template1
+
+
+development:
+  <<: *default
+  database: rspec-showcase_development
+
+test:
+  <<: *default
+  database: rspec-showcase_test
+
+production:
+  <<: *default
+  database: rspec-showcase_production
+  username: rspec-showcase
+  password: <%= ENV['RSPEC-SHOWCASE_DATABASE_PASSWORD'] %>
